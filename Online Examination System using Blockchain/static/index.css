@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* background-color: skyblue; */
+    background: linear-gradient(135deg, #fda6a6, #8fd5f9, #b9feb9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-main {
+    max-width: 90%;
+    margin: 1rem 2rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-around;
+    /* background: linear-gradient(135deg, #fda6a6, #8fd5f9, #b9feb9); */
+}
+
+
+
+h1 {
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+.top-h1 {
+    margin-top: 7rem;
+}
+
+span {
+    font-family: "Comfortaa";
+    font-size: 3.0rem;
+    font-weight: bold;
+    word-spacing: 0.01rem;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    /* text-transform: uppercase; */
+    font-family: "Comfortaa";
+    text-decoration: none;
+    /* letter-spacing: 0.1rem; */
+    color: black;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: rgb(70, 70, 241);
+}
+
+.content {
+    display: flex;
+}
+
+.text p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-left: 4rem;
+}
+
+.text h1 {
+    margin-left: 4rem;
+}
+
+button {
+    /* padding: 1rem;
+    margin: 1rem;
+    margin-left: 17rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(110, 110, 241);
+    color: white; */
+    background-color: #fff;
+        color: rgb(110, 110, 241);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border: 2px solid rgb(110, 110, 241);
+        border-radius: 5px;
+        margin: 1rem;
+            margin-left: 17rem;
+            font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    
+}
+
+.login {
+    position: relative;
+    left: 20%;
+    bottom: 14.5%;
+    width: 20%;
+}
+
+.register {
+    position: relative;
+    right: 10%;
+}
+
+img{
+    margin-right: 60px;
+    margin-top: 45px
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Exam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Include Web3 library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+</head>
+
+<body style="background-color: #b9feb9;" >
+    <div class="user">
+        {% if user %}     
+            <p style="font-size: 35px;">Welcome {{ user[1] }}</p>
+        {% endif %}
+    </div>
+    <div class="container" style="background-color: white; padding: 50px; border-radius: 20px; height: 500px; margin-top: 50px;">
+        <h1 id="questionTitle"></h1>
+        <form id="examForm">
+            <div class="question" id="question">
+                <!-- Question and options will be dynamically inserted here -->
+            </div>
+            <button id="connect" style="position: absolute; left: 80%; bottom: 75%;" onclick="Connect()">Connect</button>
+            <button id="prevButton" style="position: absolute; left: 50%; bottom: 30%;" type="button" onclick="prevQuestion()">Previous</button>
+            <button id="nextButton" style="position: absolute; bottom: 30%;" type="button" onclick="nextQuestion()">Save and Next</button>
+            <button id="submitButton" type="submit" style="display: none; position: absolute; bottom: 30%;" onclick="sendToSmartContract()">Submit</button>
+        </form>
+
+
+
+
+    </div>
+     <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Score</title>
+</head>
+
+<body>
+    <h1>User Score</h1>
+    <p id="userScore"></p>
+
+    <script>
+        // JavaScript code to retrieve and display the user's score from localStorage
+        const score = localStorage.getItem("userScore");
+        document.getElementById("userScore").innerText = "Your score: " + score;
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Score</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-top: 60px;">Your responses were submitted successfully!</h1>
+    <p style="text-align: center; font-size: 30px;">Your Score:</p>
+    <div
+        style="text-align: center; border-radius: 50%; width: 250px; height: 250px; border: 5px solid rgb(110, 110, 241);; color: black; margin: 0 auto;">
+        <p style="font-size: 80px; line-height: 170px; margin-top: 40px;">{{ score }}/5</p>
+    </div>
+</body>
+
+</html>

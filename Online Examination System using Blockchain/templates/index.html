@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <script src="https://kit.fontawesome.com/b59c55b5a0.js" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<body>
+    <!--Navigation-->
+
+    <div class="container-main">
+        <div class=" container-nav">
+            <div class="website-title">
+                <!-- <p><span class="head"></span></p> -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="current">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <h1 class="top-h1">Blockchain Based</h1>
+                <h1>Online Examination System</h1>
+                <p style="font-size: 22px;">Decentralised, transparent and easy to use!</p>
+
+                <button class="register" id="register" href="{{ url_for('register') }}">Register Now</button>
+                <button class="login" id="login">Login</button>
+
+            </div>
+            <div class="image">
+                <img src="{{ url_for('static', filename='pic.jpg') }}" alt="Logo" width="600" height="auto">
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("register").addEventListener("click", function () {
+            window.location.href = "{{ url_for('register') }}";
+        });
+
+        document.getElementById("login").addEventListener("click", function () {
+                window.location.href = "{{ url_for('login') }}";
+            });
+    </script>
+</body>
+
+</html>
